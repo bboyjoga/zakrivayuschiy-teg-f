@@ -4,3 +4,65 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --main-weight-text: 400;
+  --header-weight-text: 700;
+  --background-color: #fff;
+  --accent-color: #000;
+  --check-color: #666666;
+  --label-color: #09070e;
+  --button-text-color: #fff;
+  --background-image: repeating-linear-gradient(to right, var(--gradient-light-scheme-1) 0 2px, var(--gradient-color) 2px 4px), repeating-linear-gradient(to bottom, var(--gradient-light-scheme-1) 0 2px, var(--gradient-color) 2px 4px),
+      linear-gradient(to bottom, var(--gradient-light-scheme-2) 0.01%, var(--gradient-light-scheme-3) 100%);
+}
+
+.page.theme_light {
+  --main-weight-text: 400;
+  --header-weight-text: 700;
+  --background-color: #fff;
+  --accent-color: #000;
+  --check-color: #666666;
+  --label-color: #09070e;
+  --button-text-color: #fff;
+  --background-image: repeating-linear-gradient(to right, var(--gradient-light-scheme-1) 0 2px, var(--gradient-color) 2px 4px), repeating-linear-gradient(to bottom, var(--gradient-light-scheme-1) 0 2px, var(--gradient-color) 2px 4px),
+      linear-gradient(to bottom, var(--gradient-light-scheme-2) 0.01%, var(--gradient-light-scheme-3) 100%);
+}
+
+:root.theme-dark {
+  --main-weight-text: 465;
+  --header-weight-text: 785;
+  --background-color: #000;
+  --accent-color: #00cc14;
+  --check-color: #007a0c;
+  --label-color: #00cc14;
+  --button-text-color: #00cc14;
+  --background-image: repeating-linear-gradient(to right, var(--background-color) 0 2px, var(--gradient-color) 2px 4px), repeating-linear-gradient(to bottom, var(--background-color) 0 2px, var(--gradient-color) 2px 4px),
+      linear-gradient(to bottom, var(--gradient-dark-scheme-1), var(--gradient-dark-scheme-2));
+}
+
+.page.theme_dark {
+  --main-weight-text: 465;
+  --header-weight-text: 785;
+  --background-color: #000;
+  --accent-color: #00cc14;
+  --check-color: #007a0c;
+  --label-color: #00cc14;
+  --button-text-color: #00cc14;
+  --background-image: repeating-linear-gradient(to right, var(--background-color) 0 2px, var(--gradient-color) 2px 4px), repeating-linear-gradient(to bottom, var(--background-color) 0 2px, var(--gradient-color) 2px 4px),
+      linear-gradient(to bottom, var(--gradient-dark-scheme-1), var(--gradient-dark-scheme-2));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --main-weight-text: 465;
+      --header-weight-text: 785;
+      --background-color: #000;
+      --accent-color: #00cc14;
+      --check-color: #007a0c;
+      --label-color: #00cc14;
+      --button-text-color: #00cc14;
+      --background-image: repeating-linear-gradient(to right, var(--background-color) 0 2px, var(--gradient-color) 2px 4px), repeating-linear-gradient(to bottom, var(--background-color) 0 2px, var(--gradient-color) 2px 4px),
+          linear-gradient(to bottom, var(--gradient-dark-scheme-1), var(--gradient-dark-scheme-2));
+  }
+}
