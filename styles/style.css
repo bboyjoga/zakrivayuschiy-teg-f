@@ -254,15 +254,6 @@
   padding-bottom: 15px;
 }
 
-.floppy {
-  width: 21px;
-  height: 21px;
-  color: var(--button-text-color);
-  position: relative;
-  mix-blend-mode: difference;
-  z-index: 1;
-}
-
 .button__text {
   font-family: var(--accent-font);
   color: var(--button-text-color);
@@ -304,8 +295,8 @@
   transform: scale(1);
 }
 
-.card__like-button:focus,
-.footer__button:focus {
+.card__like-button:focus-visible,
+.footer__button:focus-visible {
   box-shadow: 4px 4px 0px 0px var(--accent-color);
   transition: 0.3s ease;
 }
@@ -363,7 +354,10 @@
 .floppy {
   width: 21px;
   height: 21px;
+  color: var(--button-text-color);
+  position: relative;
   mix-blend-mode: difference;
+  z-index: 1;
 }
 
 .dialog[open] {
