@@ -360,6 +360,12 @@
   color: var(--accent-color);
 }
 
+.floppy {
+  width: 21px;
+  height: 21px;
+  mix-blend-mode: difference;
+}
+
 .dialog[open] {
   display: flex;
   flex-direction: column;
