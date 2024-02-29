@@ -206,8 +206,6 @@
 }
 
 .card__icon-button {
-  width: 39px;
-  height: 36px;
   border: none;
   background-color: transparent;
   display: flex;
@@ -216,11 +214,16 @@
 
 .card__like-button {
   position: relative;
-  width: 130px;
-  height: 38px;
+  width: 128px;
+  height: 32px;
   outline: 2px solid var(--accent-color);
   border: none;
   background-color: transparent;
+}
+
+.like-icon {
+  width: 41px;
+  height: 38px;
 }
 
 .buttons {
@@ -228,7 +231,6 @@
   margin-bottom: 25px;
   display: flex;
   align-items: center;
-  gap: 6px;
   align-self: flex-end;
 }
 
