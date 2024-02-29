@@ -95,19 +95,6 @@
   color: inherit;
 }
 
-@keyframes pointer-move {
-  from {
-      left: 8px;
-  }
-  to {
-      left: 12px;
-  }
-}
-
-.theme-menu__button::before {
-  animation: pointer-move 0.5s ease-in-out infinite alternate;
-}
-
 .card {
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
@@ -123,12 +110,12 @@
   font-size: 18px;
 }
 
-.card__lable {
+.card__label {
   position: relative;
   border-top: 2px solid var(--accent-color);
 }
 
-.card__lable::after {
+.card__label::after {
   content: "";
   position: absolute;
   background-color: var(--accent-color);
@@ -183,7 +170,6 @@
   top: 28px;
   right: 25px;
   font-family: var(--accent-font);
-  font-variation-settings: "wgth" var(--header-weight-text, 700);
   font-size: 14px;
   color: var(--label-color);
   mix-blend-mode: hard-light;
@@ -219,10 +205,12 @@
 .card__like-button {
   position: relative;
   width: 130px;
-  height: 38px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   outline: 2px solid var(--accent-color);
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .like-icon {
@@ -259,6 +247,7 @@
   gap: 8px;
   padding-top: 15px;
   padding-bottom: 15px;
+  cursor: pointer;
 }
 
 .button__text {
@@ -302,13 +291,12 @@
   transform: scale(1);
 }
 
-.card__like-button:focus-visible,
-.footer__button:focus-visible {
+.button:focus-visible {
   box-shadow: 4px 4px 0px 0px var(--accent-color);
   transition: 0.3s ease;
 }
 
-.card__like-button::after {
+.button::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -318,21 +306,7 @@
   transform-origin: left;
 }
 
-.card__like-button:hover::after {
-  transform: scaleX(1);
-}
-
-.footer__button::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--accent-color);
-  transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
-  transform-origin: left;
-}
-
-.footer__button:hover::after {
+.button:hover::after {
   transform: scaleX(1);
 }
 
@@ -376,8 +350,6 @@
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
   overflow: hidden;
-  width: 357px;
-  height: 193px;
 }
 
 .modal__content {
@@ -388,6 +360,7 @@
 }
 
 .modal__button {
+  position: relative;
   background-color: transparent;
   outline: none;
   border: 2px solid var(--accent-color);
@@ -395,8 +368,9 @@
   font-family: var(--accent-font);
   color: var(--accent-color);
   font-size: 14px;
-  width: 293px;
-  height: 38px;
+  width: clamp(16.063rem, 3.38vw + 15.27rem, 18.313rem);
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
   cursor: pointer;
 }
 
@@ -421,8 +395,6 @@ dialog::backdrop {
 
   .dialog[open] {
       padding: 33.5px 42px;
-      width: 341px;
-      height: 191px;
   }
 
   .modal__button {

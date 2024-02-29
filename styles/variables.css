@@ -6,16 +6,10 @@
     --header-weight-text: 700;
     --background-color: #fff;
     --accent-color: #000;
-    --gradient-light-scheme-1: #d3d3d3;
-    --gradient-light-scheme-2: #e7e7e7;
-    --gradient-light-scheme-3: #1a1a1a;
-    --gradient-dark-scheme-1: #007f0c;
-    --gradient-dark-scheme-2: #004306;
-    --gradient-color: transparent;
     --check-color: #666666;
     --label-color: #09070e;
     --button-text-color: #fff;
     --heart-main-body: #ff0000;
-    --background-image: repeating-linear-gradient(to right, var(--gradient-light-scheme-1) 0 2px, var(--gradient-color) 2px 4px), repeating-linear-gradient(to bottom, var(--gradient-light-scheme-1) 0 2px, var(--gradient-color) 2px 4px),
-        linear-gradient(to bottom, var(--gradient-light-scheme-2), var(--gradient-light-scheme-3));
+    --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 }
